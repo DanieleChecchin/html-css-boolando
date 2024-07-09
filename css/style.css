@@ -12,9 +12,80 @@ body{
     font-family: sans-serif;
 }
 
+img{
+    display: block;
+    height: 450px;
+    width: 300px;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.c-w{
+    color: white;
+}
+
 /* Utils */
 
 .container{
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    height: 100px;
+    background-color: orangered;
+    position: fixed;
+    width: 100%;
+}
+
+/* Main */
+
+main{
+    padding-top: 150px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col{
+    flex-basis: calc(100% / 3 - 20px / 3);
+
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.price{
+    color: red;
+}
+
+.model{
+    font-weight: bold;
+}
+
+.discount{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    padding: 2px 5px;
+}
+
+.vision{
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    padding: 2px 5px;
 }
