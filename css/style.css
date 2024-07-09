@@ -15,7 +15,11 @@ body{
 img{
     display: block;
     height: 450px;
-    width: 300px;
+    max-width: 100%;
+}
+
+.bg-white{
+    background-color: white;
 }
 
 .bg-red{
@@ -33,7 +37,7 @@ img{
 /* Utils */
 
 .container{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -44,6 +48,7 @@ header{
     background-color: orangered;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 /* Main */
@@ -54,22 +59,19 @@ main{
 
 .row{
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
-}
-
-.col{
-    flex-basis: calc(100% / 3 - 20px / 3);
-
+    flex-wrap: wrap;
 }
 
 .card{
     position: relative;
     cursor: pointer;
+   
 }
 
 .price{
     color: red;
+    font-weight: bold;
 }
 
 .model{
@@ -87,5 +89,20 @@ main{
     position: absolute;
     bottom: 100px;
     left: 60px;
+    padding: 2px 5px;
+}
+
+.like{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+.black-vision{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
     padding: 2px 5px;
 }
