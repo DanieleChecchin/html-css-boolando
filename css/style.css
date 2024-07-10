@@ -50,7 +50,7 @@ img{
 /* Utils */
 
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -157,21 +157,27 @@ main{
 
 /* Footer >*/
 
- footer{
-    height: 100px;
+footer{
     background-color: black;
-    width: 100%;
-    color: white;
-    
- }
+}
 
- .flex{
+.bottombar{
     height: 100px;
     display: flex;
-    justify-content: space-between;
- }
+    align-items: center;
+}
 
- .info{
-    padding-bottom: 5px;
- }
- 
+.icons li{
+    display: inline-block;
+}
+
+.sito{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bottombar {
+    display: flex;
+    justify-content: space-between;
+}
+
