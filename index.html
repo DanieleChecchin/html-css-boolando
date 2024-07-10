@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolando</title>
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+        <nav class="navbar container">
+            <div class="navbar-left">
+                <ul>
+                    <li><a href="#">Donna</a></li>
+                    <li><a href="#">Uomo</a></li>
+                    <li><a href="#">Bambino</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center">
+                <img src="img/boolean-logo.png" alt="logo" id="logo">
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="#"><i class="far fa-user"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -15,15 +36,19 @@
             <div class="row">
                 <div class="col">
                     <div class="card">
-                        <img class="main-img" src="img/1.webp" alt="Foto">
-                        <img class="second-img" src="img/1b.webp" alt="">
-                        <span class="discount bg-red c-w"> - 50% </span>
-                        <span class="vision bg-green c-w"> Sostenibilità</span>
-                        <span class="like bg-white">&hearts;</span>
-                        <div>Levi's</div>
-                        <div class="model">RELAXED FIT TEE UNISEX</div>
-                        <div><span class="price">14,99 &euro;</span> <del>29,99 &euro;</del></div>
-                        
+                        <div class="card-img">
+                            <img class="main-img" src="img/1.webp" alt="Foto">
+                            <img class="second-img" src="img/1b.webp" alt="">
+                        </div>  
+                        <div class="card-txt"> 
+                            <span class="discount bg-red c-w"> - 50% </span>
+                            <span class="vision bg-green c-w"> Sostenibilità</span>
+                            <span class="like bg-white">&hearts;</span>
+                            <div>Levi's</div>
+                            <div class="model">RELAXED FIT TEE UNISEX</div>
+                            <div><span class="price">14,99 &euro;</span> <del>29,99 &euro;</del></div>
+                        </div>     
+                         
                     </div>
                 </div>
                 <div class="col">
@@ -84,9 +109,27 @@
                 </div>
             </div>
         </div>
-
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="flex">
+                <div class="info">Boolando s.r.l.
+                    <div>Informazioni legali</div>
+                    <span>Informativa sulla privacy</span>
+                    <span>Diritto di recesso</span>
+                    </div>
+                </div>
+                
+                <div class="contatti">Trovaci anche su 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </div>
+            </div>    
+        </div>    
+    </footer>
 </body>
 </html>

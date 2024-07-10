@@ -12,9 +12,22 @@ body{
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#logo{
+    height: 40px;
+    margin: 0 auto;
+}
+
 img{
     display: block;
-    height: 450px;
     max-width: 100%;
 }
 
@@ -37,18 +50,36 @@ img{
 /* Utils */
 
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header */
 
 header{
-    height: 100px;
     background-color: orangered;
+    box-shadow: 0 1px 3px gray;
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div{
+    flex-basis: calc(100% / 3);
+}
+
+.navbar ul{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-right ul{
+    justify-content: flex-end;
 }
 
 /* Main */
@@ -61,6 +92,10 @@ main{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: calc(100% / 3 - 20px / 3);
 }
 
 .card{
@@ -122,6 +157,21 @@ main{
 
 /* Footer >*/
 
- 
+ footer{
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    
+ }
 
+ .flex{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .info{
+    padding-bottom: 5px;
+ }
  
